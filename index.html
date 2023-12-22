@@ -3,9 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <title>A Site of Ice and Fire</title>
 </head>
-<body>
+<body class="vh-100 overflow-hidden">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+    <div class="container-md">
+      <a href="#intro" class="navbar-brand">
+        <span class="fw-bold text-white">
+          <i class="bi bi-fire text-primary"></i>
+          A Site of Ice and Fire       
+        </span>
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" 
+      id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#topics" class="nav-link text-primary">Not really</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link text-white">sure what to</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">put here</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a href="#pricing" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item ms-2 d-none d-md-inline">
+            <a href="#pricing" class="btn btn-secondary">button can go</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
